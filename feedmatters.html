@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FeedMatters · Bhoomi Mehta</title>
+<meta name="description" content="How I found the first channel for a brand-new newsletter platform, with a weighted scoring model I tried to break.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Caveat:wght@500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="scrap.css?v=24">
+</head>
+<body style="--c: var(--blue)">
+
+<svg class="paper crumple" aria-hidden="true"><filter id="crumple"><feTurbulence type="fractalNoise" baseFrequency="0.006" numOctaves="4" seed="21"/><feDiffuseLighting surfaceScale="2.6" lighting-color="#fff"><feDistantLight azimuth="225" elevation="60"/></feDiffuseLighting></filter><rect width="100%" height="100%" filter="url(#crumple)"/></svg>
+<svg class="paper grain" aria-hidden="true"><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain)"/></svg>
+
+<!-- The pen airplane flies across the top of the screen as you read -->
+<div class="flight" aria-hidden="true"><span class="flight-line"></span><svg class="flight-plane" width="34" height="34" viewBox="-20 -20 40 40"><g fill="none" stroke="#4D6386" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"><path d="M-14 0 L14 0 L10 -2 M14 0 L10 2"/><path d="M-1.5 0 L-8 -10.5 L-4.2 -10.5 L5.5 0"/><path d="M-1.5 0 L-8 10.5 L-4.2 10.5 L5.5 0"/><path d="M-11.5 0 L-14.5 -4.6 L-12.4 -4.6 L-8.5 0"/></g></svg></div>
+
+<main class="spread" style="--num: var(--blue); --label: var(--blue-deep)">
+  <nav class="stop-top mono" aria-label="Journey">
+    <a href="index.html#journey">← Back to journey</a>
+    <span>Stop 01 / 04</span>
+  </nav>
+
+  <section class="hero">
+    <div class="reveal">
+      <div class="hero-title"><span class="numeral">1.</span><h1 class="label">FeedMatters</h1></div>
+      <p class="mono role">Sep 2026 – now · Growth and strategy intern</p>
+      <p class="question">How do you find your first users when nobody knows your product exists?</p>
+      <span class="scribble">a personalized newsletter platform <svg viewBox="0 0 54 34" aria-hidden="true"><path d="M2 6 C 14 2, 26 6, 24 14 C 22 22, 10 18, 16 12 C 24 4, 40 14, 50 28"/><path d="M42 26 L50 29 L49 20"/></svg></span>
+    </div>
+    <div class="collage reveal">
+      <span class="scrap blue" aria-hidden="true" style="inset:-4% -4% 18% 14%;transform:rotate(3deg)"></span>
+      <span class="tape t1 blue" aria-hidden="true"></span>
+      <figure class="polaroid big"><img src="photos/feedmatters.jpg" alt="The FeedMatters homepage: The only newsletter you need" width="670" height="503"><figcaption>feedmatters.com</figcaption></figure>
+      <svg class="postmark" viewBox="0 0 160 160" role="img" aria-label="Postmark: FEEDMATTERS, GROWTH · STRATEGY, SEP 2026">
+        <defs><path id="pm1-t" d="M 22 80 A 58 58 0 0 1 138 80"/><path id="pm1-b" d="M 30 80 A 50 50 0 0 0 130 80"/></defs>
+        <circle cx="80" cy="80" r="74" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="80" cy="80" r="44" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <text font-size="11"><textPath href="#pm1-t" startOffset="50%" text-anchor="middle">FEEDMATTERS</textPath></text>
+        <text font-size="10"><textPath href="#pm1-b" startOffset="50%" text-anchor="middle">GROWTH · STRATEGY</textPath></text>
+        <text x="80" y="76" font-size="12" text-anchor="middle">SEP</text>
+        <text x="80" y="94" font-size="12" text-anchor="middle">2026</text>
+      </svg>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="note reveal">
+      <p>I was trying to figure out where FeedMatters could find its first users. Instead of spreading ourselves across every platform, I built a weighted scoring model to compare five channels.</p>
+      <p>Indie Hackers came out on top. What mattered more to me: even when I changed the weights, the ranking stayed the same.</p>
+    </div>
+    <figure class="card grid fit-chart reveal" aria-labelledby="fit-cap">
+      <span class="tape mustard" aria-hidden="true" style="top:-12px;right:24px;transform:rotate(6deg)"></span>
+      <div class="card-head">
+        <p class="mono" id="fit-cap" style="margin:0">Fig. 2 · Platform fit, out of 10</p>
+        <div class="toggle" role="group" aria-label="Scoring method">
+          <button type="button" data-mode="weighted" aria-pressed="true">My weights</button>
+          <button type="button" data-mode="equal" aria-pressed="false">Equal weights</button>
+        </div>
+      </div>
+      <ol class="bars">
+        <li class="win" data-weighted="8.35" data-equal="8.2"><span class="name">Indie Hackers</span><span class="track"><span class="bar"></span></span><span class="val">0.00</span></li>
+        <li data-weighted="5.15" data-equal="5.6"><span class="name">LinkedIn</span><span class="track"><span class="bar"></span></span><span class="val">0.00</span></li>
+        <li data-weighted="4.10" data-equal="4.4"><span class="name">Twitter / X</span><span class="track"><span class="bar"></span></span><span class="val">0.00</span></li>
+        <li data-weighted="3.75" data-equal="4.0"><span class="name">Reddit</span><span class="track"><span class="bar"></span></span><span class="val">0.00</span></li>
+        <li data-weighted="2.75" data-equal="2.8"><span class="name">Product Hunt</span><span class="track"><span class="bar"></span></span><span class="val">0.00</span></li>
+      </ol>
+      <figcaption class="hand-note" aria-live="polite">try to break it: flip the scoring</figcaption>
+    </figure>
+  </section>
+
+  <section class="takeaway reveal">
+    <span class="label" style="--label: var(--blue-deep)">what I took away</span>
+    <blockquote>A good strategy isn't just choosing an answer. It's checking whether your reasoning <em>holds up</em>.</blockquote>
+  </section>
+
+  <footer class="foot">
+    <a class="mono" href="index.html#journey">← Back to<span class="name">the map</span></a>
+    <span class="dots" aria-label="Stop 1 of 4"><b></b><i></i><i></i><i></i></span>
+    <a class="mono" href="designare.html" style="text-align:right">Next stop →<span class="name">Designare</span></a>
+  </footer>
+</main>
+
+<script src="scrap.js?v=4"></script>
+</body>
+</html>
