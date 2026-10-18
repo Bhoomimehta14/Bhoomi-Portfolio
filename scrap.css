@@ -589,3 +589,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue-deep); out
   .cover .meta-row { display: none; }
   .cover-title { margin-top: 24px; }
 }
+
+/* Phones: the clouds photo sits below the buttons instead of sliding up into them */
+@media (max-width: 900px) {
+  .cover-right { margin-top: 28px; }
+  .cover-right .mini { margin-top: 0; transform: rotate(-6deg); }
+}
