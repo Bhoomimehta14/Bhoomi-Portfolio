@@ -227,7 +227,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue-deep); out
 .stop { position: absolute; width: clamp(180px, min(19vw, 32vh), 280px); z-index: 2; }
 .stop.s1 { left: 3%; top: 46%; --c: var(--blue); }
 .stop.s2 { left: 29%; top: 8%; --c: var(--mustard); }
-.stop.s3 { left: 54%; top: 50%; --c: var(--sage); }
+.stop.s3 { left: 54%; top: 45%; --c: var(--sage); }
 .stop.s4 { left: 78%; top: 6%; --c: var(--clay); }
 .stop .pin-num { position: absolute; left: -26px; top: -40px; z-index: 4; font: 400 clamp(64px, 7vw, 92px)/0.8 var(--display); color: var(--c); }
 .stop .polaroid { transform: rotate(var(--r, -2deg)); transition: transform 0.3s ease; }

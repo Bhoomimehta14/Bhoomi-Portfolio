@@ -10,9 +10,9 @@ My personal portfolio, designed as a scrapbook travel journal. Each place I've w
 |---|---|
 | `index.html` | Cover page, plus the journey map with all four stops |
 | `feedmatters.html` | Stop 1: growth and strategy internship at FeedMatters, with my platform-fit scoring model |
-| `designare.html` | Stop 2: head of events and sales team lead for Designare's designathon |
-| `boston.html` | Stop 3: Ideas to Impact at Boston University |
-| `hackathons.html` | Stop 4: first prize at IETE-SF, plus ConnectED, Unisphere and VYBE Learn |
+| `boston.html` | Stop 2: Ideas to Impact at Boston University |
+| `hackathons.html` | Stop 3: first prize at IETE-SF, plus ConnectED, Unisphere and VYBE Learn |
+| `designare.html` | Stop 4: head of events and sales team lead for Designare's designathon |
 | `about.html` | More context: about me, interests, skills ("what's in my bag") and contact (a postcard) |
 
 ## Built with
